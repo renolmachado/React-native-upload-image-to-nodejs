@@ -1,13 +1,13 @@
 # Configuring React native project
 ```ruby
-git clone https://github.com/renolmachado/React-native-upload-image-to-nodejs.git
+$ git clone https://github.com/renolmachado/React-native-upload-image-to-nodejs.git
 ```
 Open terminal in: ...React-native-upload-image-to-nodejs\react-native solution>
 
 And execute 
 
 ```ruby
-yarn
+$ yarn
 ```
 
 Open AndroidStudio and load "Android" (...React-native-upload-image-to-nodejs\react-native solution\Android) project
@@ -30,7 +30,7 @@ In the file **"api/upload.js"** configure your IP and Port where the server is r
 Open a new Terminal and run:
 
 ```ruby
-react-native run-android
+$ react-native run-android
 ```
 If an error has occurred, close the terminal and try again. :)
 
@@ -41,9 +41,9 @@ Open terminal in: ...React-native-upload-image-to-nodejs\node-server solution
 And execute 
 
 ```sh
-yarn
-mkdir public
-node index.js
+$ yarn
+$ mkdir public
+$ node index.js
 ```
 
 
