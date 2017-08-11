@@ -11,22 +11,19 @@ And execute
 yarn
 ```
 
-Delete folder "Android" and run:
+Open AndroidStudio and load "Android" (...React-native-upload-image-to-nodejs\react-native solution\Android) project and fix Gradle files "Open File" "Sync Now/Try Again" or "Update Build Tools version and sync project"
+##Corroborate that Gradle has been commpiled##
+
+Close AndroidStudio
+
+Now delete "build" folder in ...React-native-upload-image-to-nodejs\react-native solution\Android and ...React-native-upload-image-to-nodejs\react-native solution\Android\app
+
+In the file "api/upload.js" configure your IP and Port where the server is running
+
+Open a new Terminal and run
 
 ```ruby
-react-native upgrade
+react-native run-android
 ```
 
-Indicate yes (y) for all asks
 
-Now run:
-```ruby
-react-native link
-```
-Add the followers permissions to AndroidManifest.xml in "Android/app/src"
-
-  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-  <uses-permission android:name="android.permission.CAMERA" />
-
-
-Uploading image to a nodejs server 
