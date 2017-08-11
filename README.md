@@ -33,3 +33,18 @@ Open a new Terminal and run:
 react-native run-android
 ```
 If an error has occurred, close the terminal and try again. :)
+
+# Configuring Nodejs server
+
+Open terminal in: ...React-native-upload-image-to-nodejs\node-server solution
+
+And execute 
+
+```sh
+yarn
+mkdir public
+node index.js
+```
+
+
+
