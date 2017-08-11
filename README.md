@@ -1,5 +1,4 @@
-# React native upload image to nodejs
-
+# Configuring React native project
 ```ruby
 git clone https://github.com/renolmachado/React-native-upload-image-to-nodejs.git
 ```
@@ -11,19 +10,26 @@ And execute
 yarn
 ```
 
-Open AndroidStudio and load "Android" (...React-native-upload-image-to-nodejs\react-native solution\Android) project and fix Gradle files "Open File" "Sync Now/Try Again" or "Update Build Tools version and sync project"
-##Corroborate that Gradle has been commpiled##
+Open AndroidStudio and load "Android" (...React-native-upload-image-to-nodejs\react-native solution\Android) project
+Fix Gradle files steps: 
+
+ - "Open File"
+ - "Sync Now/Try Again"
+ - "Update Build Tools version and sync project"
+
+### Corroborate that Gradle has been compiled
 
 Close AndroidStudio
 
-Now delete "build" folder in ...React-native-upload-image-to-nodejs\react-native solution\Android and ...React-native-upload-image-to-nodejs\react-native solution\Android\app
+Now delete **"build"** folders in:
+ - ...React-native-upload-image-to-nodejs\react-native solution\Android
+ - ...React-native-upload-image-to-nodejs\react-native solution\Android\app
 
-In the file "api/upload.js" configure your IP and Port where the server is running
+In the file **"api/upload.js"** configure your IP and Port where the server is running
 
-Open a new Terminal and run
+Open a new Terminal and run:
 
 ```ruby
 react-native run-android
 ```
-
-
+If an error has occurred, close the terminal and try again. :)
