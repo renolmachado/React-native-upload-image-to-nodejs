@@ -20,7 +20,7 @@ export default class App extends Component {
             />
         return (
             <View>
-                <Image source={{ uri: 'http://192.168.43.70:3000/images/asd.jpg',  method: 'GET', }}
+                <Image source={{ uri: 'http://192.168.131.128:3000/images/asd.jpg',  method: 'GET', }}
                     style={{ width: 60, height: 60 }} />
                 <Text>Hello React Native</Text>
                 <TouchableOpacity onPress={this.show.bind(this)}>
