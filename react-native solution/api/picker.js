@@ -5,10 +5,11 @@ var options = {
   storageOptions: {
     skipBackup: true,
     path: 'images'
-  }
+  },
+  quality: 0.5,
 };
 
-let pick = (cb) => {
+let pick = (callback) => {
   ImagePicker.showImagePicker(options, (response) => {
     if (response.didCancel) {
       console.log('User cancelled image picker');
@@ -21,7 +22,7 @@ let pick = (cb) => {
     }
     else {
       let source = { uri: response.uri };
-      cb(source, response.data);
+      callback(source, response.data);
     }
   });
 }
