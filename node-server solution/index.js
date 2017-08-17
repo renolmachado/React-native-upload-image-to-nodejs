@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = express();
 
 app.use(formidable({
-    uploadDir: 'public'
+    uploadDir: 'node-server solution/public'
 }));
 
 app.listen(3000, () => console.log('Server running'));
