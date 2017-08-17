@@ -20,9 +20,11 @@ export default class App extends Component {
             />
         return (
             <View>
+                <Image source={{ uri: 'http://192.168.43.70:3000/images/asd.jpg',  method: 'GET', }}
+                    style={{ width: 60, height: 60 }} />
                 <Text>Hello React Native</Text>
                 <TouchableOpacity onPress={this.show.bind(this)}>
-                    <Text  style={styles.button}>Show Image Picker</Text>
+                    <Text style={styles.button}>Show Image Picker</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={this.upload.bind(this)}>
                     <Text style={styles.button}>Upload</Text>
@@ -32,23 +34,23 @@ export default class App extends Component {
         )
     }
     show() {
-        pick((source, data) => this.setState({  avatarSource: source, data: data  }));
+        pick((source, data) => this.setState({ avatarSource: source, data: data }));
     }
     upload() {
         uploadFile([
             { name: 'avatar', filename: 'avatar.png', data: this.state.data }
         ])
-        .then(res => console.log(res))
-        .catch(err => console.log(err))
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
     }
 }
 
 
-const styles = StyleSheet.create ({
-   button: {
-      borderWidth: 1,
-      padding: 25,
-      borderColor: 'black',
-      margin: 5
-   }
+const styles = StyleSheet.create({
+    button: {
+        borderWidth: 1,
+        padding: 25,
+        borderColor: 'black',
+        margin: 5
+    }
 })
